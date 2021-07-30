@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="container row">
+  <header class="layout container row">
     <h2>Notícias .com</h2>
     <nav class="menu">
       <ul class="row">
@@ -52,5 +52,9 @@
         break;
     }
   ?>
+
+<footer>
+  <p>Desenvolvido por: Fellipe Silverio Brandao</p>
+</footer>
 </body>
 </html>

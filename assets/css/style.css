@@ -11,7 +11,7 @@
 
 .container {
   margin: auto;
-  width: 1400px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
 }
@@ -22,6 +22,7 @@
   flex-wrap: wrap;
 }
 
+/* configuraçao header */
 header {
   margin-top: 20px;
   padding: 15px;
@@ -36,6 +37,7 @@ header {
   margin-right: 20px;
 }
 
+/* configuraçao btn e inputs */
 .btn {
   padding: 15px;
   color: rgb(136, 132, 132);
@@ -67,4 +69,63 @@ input:focus {
 
 input:hover {
   box-shadow: 2px 2px 5px rgb(78, 173, 102);
+}
+
+/* configuraçao main */
+
+main {
+  align-items: center;
+}
+
+.titulo {
+  margin-top: 30px;
+}
+
+.conteudo {
+  margin: 30px;
+}
+
+/* configuraçao footer */
+footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* configuraçao cadastro */
+
+.cadastro {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.btn-cadastro {
+  display: block;
+  border: none;
+  margin: 10px auto;
+}
+
+.padrao_input {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid rgb(136, 132, 132);
+  outline: none;
+  transition: all 0.4s;
+}
+
+.seleciona {
+  width: 320px;
 }
