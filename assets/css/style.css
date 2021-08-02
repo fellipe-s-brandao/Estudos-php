@@ -85,21 +85,6 @@ main {
   margin: 30px;
 }
 
-/* configuraçao footer */
-footer {
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  height: 50px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 15px;
-}
-
-footer p {
-  text-align: center;
-}
 
 /* configuraçao cadastro */
 
@@ -115,7 +100,7 @@ footer p {
   margin: 10px auto;
 }
 
-.padrao_input {
+.padrao_input, .aviso {
   display: block;
   width: 300px;
   margin-bottom: 15px;
@@ -129,3 +114,40 @@ footer p {
 .seleciona {
   width: 320px;
 }
+
+/* avisos */
+.vermelho{
+  color: red;
+  border: solid 1px red;
+  font-size: 20px;
+  text-align: center;
+}
+
+.verde{
+  color: rgb(78, 173, 102);
+  border: solid 1px rgb(78, 173, 102);
+  font-size: 20px;
+  text-align: center;
+}
+
+/* config home */
+
+.painel_config{
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.noticia{
+  margin: 30px 10px;
+  width: 200px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.noticia h2,h3,p{
+  box-sizing: border-box;
+  font-display: inline-block;
+  margin-bottom: 10px;
+}
+

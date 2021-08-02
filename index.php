@@ -1,15 +1,22 @@
+<?php
+require_once "class/conexao.php";
+$c = new Conexao;
+
+$c->conectar("bd_noticias","localhost","root","");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notícias .com</title>
+  <title>Notícias.com</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="layout container row">
-    <h2>Notícias .com</h2>
+    <h2>Notícias.com</h2>
     <nav class="menu">
       <ul class="row">
         <li>
@@ -25,7 +32,7 @@
     </nav>
 
     <div>
-      <form action="" method="GET">
+      <form action="index.php?pag=buscaNoticia" method="GET">
           <input type="text" placeholder="Buscar" name="buscar">
           <input  class="btn btn-busca" type="submit" value="Buscar">
       </form>
@@ -47,14 +54,15 @@
         require 'paginas/cadastraCategoria.php';
         break;
 
+      case 'buscaNoticia':
+        require 'paginas/buscaNoticia.php';
+        break;
       default:
         require 'paginas/home.php';
         break;
     }
   ?>
 
-<footer>
-  <p>Desenvolvido por: Fellipe Silverio Brandao</p>
-</footer>
+
 </body>
 </html>
